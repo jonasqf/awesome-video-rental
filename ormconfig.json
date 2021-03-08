@@ -1,0 +1,19 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "123456",
+    "database": "postgres",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+       "src/domain/data/entities/**/*.ts"
+    ],
+    "migrations": [
+       "src/infra/migration/**/*.ts"
+    ],
+    "subscribers": [
+       "src/infra/subscriber/**/*.ts"
+    ]
+ }

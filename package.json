@@ -1,0 +1,45 @@
+{
+  "name": "awesome-video-rental-api",
+  "version": "0.1.0",
+  "description": "This is a cool way to rent videos online. Using TDD with jest, typescript, express and node.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "test:staged": "jest",
+    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/index.ts"
+  },
+  "repository": "https://github.com/jonasqf/awesome-video-rental-api.git",
+  "author": "Jonas Flach",
+  "license": "MIT",
+  "keywords": [
+    "rest",
+    "api",
+    "express",
+    "typescript",
+    "sequelize",
+    "jwt"
+  ],
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.31",
+    "@types/source-map-support": "^0.5.3",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "onchange": "^7.1.0",
+    "serve": "^11.3.2",
+    "source-map-support": "^0.5.19",
+    "ts-jest": "^26.5.2",
+    "ts-node": "^3.3.0",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "install": "^0.13.0",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.31"
+  }
+}
