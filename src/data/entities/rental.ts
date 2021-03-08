@@ -1,12 +1,16 @@
-import {Column, CreateDateColumn, Entity, PrimaryColumn, PrimaryGeneratedColumn, UpdateDateColumn} from "typeorm";
+import {Column, CreateDateColumn, Entity, JoinColumn, OneToOne, PrimaryColumn, PrimaryGeneratedColumn, UpdateDateColumn} from "typeorm";
+import { Video } from "./video";
 
 @Entity()
 export class Rental {
 
 @PrimaryGeneratedColumn()
 id: number;
-@Column()
-video: string;
+
+@OneToOne(()=>Video)
+@JoinColumn()
+public video: Video;
+
 @Column()
 dueDate: Date;
 @Column()

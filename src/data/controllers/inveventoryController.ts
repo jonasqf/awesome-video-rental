@@ -2,7 +2,7 @@ import { getRepository } from 'typeorm'
 import { Inventory } from '../entities/inventory'
 import { Request, Response } from 'express'
 
-export const getInventory = async (request: Request, response: Response) => {
+export const getInventories = async (request: Request, response: Response) => {
     const inventory = await getRepository(Inventory).find()
     return response.json(inventory)
 }
