@@ -8,12 +8,12 @@
     "synchronize": true,
     "logging": false,
     "entities": [
-       "src/data/entities/**/*.ts"
+       "src/infrastructure/database/entities/*.ts"
     ],
     "migrations": [
-       "src/infra/migration/**/*.ts"
+       "src/infrastructure/database/postgres/migration/**/*.ts"
     ],
     "subscribers": [
-       "src/infra/subscriber/**/*.ts"
+       "src/infrastructure/database/subscriber/**/*.ts"
     ]
  }

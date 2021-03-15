@@ -9,10 +9,13 @@ createConnection({
     password: "123456",
     database: "postgres",
     entities: [
-        "./src/domain/data/entities/*.js"
+        "src/infrastructure/database/entities/*.ts"
     ],
     synchronize: true,
-    logging: false
+    logging: true
 }).then(connection => {
-    // here you can start to work with your entities
+    console.log('database connected')
+   
+        // here you can start to work with your entities
 }).catch(error => console.log(error));
+
